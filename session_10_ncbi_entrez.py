@@ -17,7 +17,7 @@ from Bio import SeqIO
 # 1. API Configuration & Authentication
 # ------------------------------------------------------------------------------
 # NCBI requires a contact email to track query rates and contact developers.
-Entrez.email = "surenaghadam2007@gmale.com"  # Replace or keep standard email
+Entrez.email = "surenaghadam2007@gmail.com"  # Replace or keep standard email
 
 # Target accession: NM_000518.5 (Homo sapiens hemoglobin subunit beta mRNA)
 accession_id = "NM_000518.5"
