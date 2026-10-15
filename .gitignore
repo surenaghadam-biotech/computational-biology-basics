@@ -1,6 +1,17 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
 bio_env/
 venv/
 env/
-__pycache__/
-*.pyc
+
+# IDE configurations
 .vscode/
+.idea/
+
+# Personal / temporary data
+zaban/
+*.tmp
