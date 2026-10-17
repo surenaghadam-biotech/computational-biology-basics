@@ -14,8 +14,7 @@ from pathlib import Path
 from Bio import Entrez, SeqIO
 
 
-ENTREZ_EMAIL = "surena.ghadam@example.com"  # Replace with your email
-
+ENTREZ_EMAIL = "surenaghadam2007@gmail.com"
 
 def search_ncbi_accession(term: str, db: str = "nucleotide") -> str:
     """
