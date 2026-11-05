@@ -22,3 +22,8 @@ build/
 dist/
 __pycache__/
 *.pyc
+
+.env
+__pycache__/
+
+test.py
