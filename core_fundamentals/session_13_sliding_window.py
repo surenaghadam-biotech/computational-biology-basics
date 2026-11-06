@@ -5,7 +5,7 @@ in nucleotide composition (e.g., GC-content) across a genomic sequence.
 """
 
 from typing import List, Tuple
-from Bio.SeqUtils import gc_fraction
+from Bio.SeqUtils import gc_fraction # type: ignore[reportUnknownVariableType]
 
 
 def calculate_sliding_window_gc(
@@ -24,6 +24,7 @@ def calculate_sliding_window_gc(
             - Window sub-sequence
             - GC content percentage (0.0 to 100.0)
     """
+
     results: List[Tuple[int, str, float]] = []
     seq_len: int = len(sequence)
 
@@ -31,7 +32,7 @@ def calculate_sliding_window_gc(
     for start in range(0, seq_len - window_size + 1, step_size):
         end = start + window_size
         window_kmer = sequence[start:end]
-        gc_score = gc_fraction(window_kmer) * 100.0
+        gc_score =float( gc_fraction(window_kmer) * 100.0)
         results.append((start, window_kmer, gc_score))
 
     return results
