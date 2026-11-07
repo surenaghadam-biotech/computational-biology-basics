@@ -25,5 +25,5 @@ __pycache__/
 
 .env
 __pycache__/
-
+*.gb
 test.py
